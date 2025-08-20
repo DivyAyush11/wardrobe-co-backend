@@ -1,4 +1,4 @@
-const port = 4000;
+const port = process.env.PORT || 4000; //Uses the port given by hosting environment else if not present then 4000
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
